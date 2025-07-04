@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-theme: rgb(27,156,227);
+  --color-heading: rgb(35,62,98);
+  --color-gray:rgb(128,128,128);
+
+  --gap: 1px;
+  --line-offset: 1px/* calc(var(--gap) / 2) */;
+  --line-thickness: 1px;
+  --line-color: rgb(242,242,242);
 }
 
 @theme inline {
@@ -10,6 +18,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-nunito: var(--font-nunito);
+  --color-theme: var(--color-theme);
+  --color-heading: var(--color-heading);
+  --color-gray: var(--color-gray);
+  --breakpoint-xs: 480px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +36,79 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)
+}
+
+.custom-shadow-white {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2)
+}
+
+.feature {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240,249,253);
+  position: relative;
+  transition: background-color .5s ease-in-out
+}
+
+.feature.active {
+  background-color: var(--color-theme);
+}
+
+.feature:hover {
+  background-color: var(--color-theme)
+}
+.feature::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #fff transparent transparent;
+    box-sizing: border-box;
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number {
+  transition: --num 5s;
+  counter-reset: num var(--num);
+}
+.number:hover {
+  --num: 10000;
+}
+.number::after {
+  content: counter(num);
+}
+
+.grid-item::before, 
+.grid-item::after {
+   content: '';
+   position: absolute;
+   background-color: var(--line-color);
+   z-index: 1;
+}
+
+.grid-item::after {
+  inline-size: 100vw;
+  block-size: var(--line-thickness);
+  inset-inline-start: 0;
+  inset-block-start: calc(var(--line-offset) * -1);
+}
+
+.grid-item::before {
+  inline-size: var(--line-thickness);
+  block-size: 100vh;
+  inset-block-start: 0;
+  inset-inline-start: calc(var(--line-offset) * -1);
 }

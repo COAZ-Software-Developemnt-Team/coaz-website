@@ -1,16 +1,94 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Menu from "./_components/Menu"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const Nunito = localFont({
+  src: [
+    {
+      path: '../../public/fonts/NunitoSans-ExtraLight.ttf',
+      style:'normal',
+      weight: '200'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-ExtraLightItalic.ttf',
+      style:'italic',
+      weight: '200'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Light.ttf',
+      style:'normal',
+      weight: '300'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-LightItalic.ttf',
+      style:'italic',
+      weight: '300'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Regular.ttf',
+      style:'normal',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Italic.ttf',
+      style:'italic',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Medium.ttf',
+      style:'normal',
+      weight: '500'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-MediumItalic.ttf',
+      style:'italic',
+      weight: '500'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-SemiBold.ttf',
+      style:'normal',
+      weight: '600'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-SemiBoldItalic.ttf',
+      style:'italic',
+      weight: '600'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Bold.ttf',
+      style:'normal',
+      weight: '700'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-BoldItalic.ttf',
+      style:'italic',
+      weight: '700'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-ExtraBold.ttf',
+      style:'normal',
+      weight: '800'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-ExtraBoldItalic.ttf',
+      style:'italic',
+      weight: '800'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-Black.ttf',
+      style:'normal',
+      weight: '900'
+    },
+    {
+      path: '../../public/fonts/NunitoSans-BlackItalic.ttf',
+      style:'italic',
+      weight: '900'
+    }
+  ],
+  variable: '--font-nunito'
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +103,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${Nunito.variable} antialiased`}
       >
+        <header className="h-fit">
+          <Menu/>
+        </header>
         {children}
+        <footer className="h-[90vh] bg-[rgb(35,35,35)]">
+
+        </footer>
       </body>
     </html>
   );
