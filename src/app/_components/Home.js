@@ -438,8 +438,8 @@ const Form = () => {
       <Input type='text' name='lastName' value={user.lastName?user.lastName:''} placeholder='Last Name' onChange={onChange}/>
       <Input type='text' name='email' value={user.email?user.email:''} placeholder='Email' onChange={onChange}/>
       <Input type='text' name='idNumber' value={user.idNumber?user.idNumber:''} placeholder='Id Number' onChange={onChange}/>
-      <Input type='select' name='gendar' value={user.gendar?user.gendar:''} options onChange={onChange}>
-        <option value=''>Gendar</option>
+      <Input type='select' name='gender' value={user.gender?user.gender:''} options onChange={onChange}>
+        <option value=''>gender</option>
         {sex.map((option,i) => <option key={i}>{option}</option>)}
       </Input>
       <Input type='select' name='userType' value={user.userType?user.userType.id:''} onChange={onUserType}>

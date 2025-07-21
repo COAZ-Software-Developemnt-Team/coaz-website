@@ -2,13 +2,21 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Menu from "./_components/Menu"
+import {Logo} from "./_components/CoazIcons"
+import { FaFacebook } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { GiMailbox } from "react-icons/gi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaClock } from "react-icons/fa";
+
 
 const Nunito = localFont({
-  src: [
-    {
-      path: '../../public/fonts/NunitoSans-ExtraLight.ttf',
-      style:'normal',
-      weight: '200'
+    src: [
+        {
+            path: '../../public/fonts/NunitoSans-ExtraLight.ttf',
+            style: 'normal',
+            weight: '200'
     },
     {
       path: '../../public/fonts/NunitoSans-ExtraLightItalic.ttf',
@@ -109,10 +117,69 @@ export default function RootLayout({
           <Menu/>
         </header>
         {children}
-        <footer className="h-[90vh] bg-[rgb(35,35,35)]">
+        <footer className="px-8 py-10 bg-[rgb(0,175,240)]">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+
+            <div className="flex flex-col items-center md:items-start">
+              <div className="w-50 h-50 bg-white rounded-full mb-4 flex items-center justify-center font-bold text-black">
+                <Logo size={200} fill="rgb(0,175,240)"/>
+              </div>
+              <p className="text-center md:text-left">
+              </p>
+            </div>
+
+
+            <div>
+              <h3 className="font-semibold mb-4">CONTACT US</h3>
+              <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <MdEmail /> info@coaz.com
+                </li>
+                <li className="flex items-center gap-2">
+                    <IoLogoWhatsapp /> +260761234390
+                </li>
+                <li className="flex items-center gap-2">
+                    <FaFacebook /> Clinical Officers Association Of Zambia
+                </li>
+                <li className="flex items-center gap-2">
+                    <GiMailbox /> P.O Box 12345
+                </li>
+              </ul>
+            </div>
+
+
+            <div>
+              <h3 className="font-semibold mb-4">LOCATION</h3>
+
+                  <li className="flex items-center gap-2">
+                      <FaLocationDot /> Kapwayambale Rd, Obama
+                  </li>
+
+
+              </div>
+
+
+
+            <div>
+              <h3 className="font-semibold mb-4">WORK HOURS</h3>
+              {/*<div className="mb-4">*/}
+              <ul>
+                  <li className="flex items-center gap-2">
+                      <FaClock /> Week Days: 08:00 - 17:00
+                  </li>
+
+                  <li className="flex items-center gap-2">
+                      <FaClock /> Weekends:  08:00 - 12:00
+                  </li>
+              </ul>
+              </div>
+
+            </div>
 
         </footer>
       </body>
     </html>
   );
 }
+
