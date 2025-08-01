@@ -163,7 +163,7 @@ export default function RootLayout({
 
             <div>
               <h3 className="font-semibold mb-4">WORK HOURS</h3>
-              {/*<div className="mb-4">*/}
+
               <ul>
                   <li className="flex items-center gap-2">
                       <FaClock /> Week Days: 08:00 - 17:00

@@ -53,7 +53,6 @@ const Home = () => {
 }
 
 export default Home
-
 const Features = () => {
 
   return (
@@ -433,7 +432,7 @@ const Form = () => {
       }
   };
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 w-full h-fit gap-4'>
+    <div id="user-form" className='grid grid-cols-1 md:grid-cols-2 w-full h-fit gap-4'>
       <Input type='text' name='firstName' value={user.firstName?user.firstName:''} placeholder='First Name' onChange={onChange}/>
       <Input type='text' name='lastName' value={user.lastName?user.lastName:''} placeholder='Last Name' onChange={onChange}/>
       <Input type='text' name='email' value={user.email?user.email:''} placeholder='Email' onChange={onChange}/>

@@ -1,5 +1,7 @@
 import { FaRegCircleDot } from "react-icons/fa6";
 import Home from "../_components/Home";
+import News from "../_components/News";
+import About from "../_components/About";
 
 export const people = [
     {
@@ -1164,12 +1166,17 @@ export const membership = {
     ]
 }
 
+function Events() {
+
+}
+
 export const menus = [
     {
         name:'Home',
         link:'/home',
         Component:Home
     },
+
     (() => {return association})(),
     (() => {return services})(),
     (() => {return professionalCategories})(),
@@ -1177,11 +1184,14 @@ export const menus = [
     (() => {return membership})(),
     {
         name:'About',
-        link:'/about'
+        link:'/about',
+        Component: About
     },
     {
         name:'News and Events',
-        link:'/news'
+        link:'/news',
+        Component: News
+
     }
 ];
 
