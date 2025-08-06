@@ -176,7 +176,7 @@ const Menu = () => {
                     <div className="hidden xl:flex flex-row items-center space-x-1">
                         <FaPaperPlane size={20}/>
                         <p className="font-semibold">Email :</p>
-                        <p className="font-light">coaz@info.org</p>
+                        <p className="font-light">info@coaz.com</p>
                     </div>
                     <div className="hidden xl:flex flex-row items-center space-x-1">
                         <FaPhoneAlt size={20}/>
@@ -224,70 +224,11 @@ const Menu = () => {
                     )}
 
                 </div>
-                {/* <div className="sm:hidden flex flex-row w-full h-full items-center justify-between">
-            <div onClick={e => {
-                e.preventDefault();
-                if(mobileMenuRef.current) {
-                  if(!mobileMenuOpen) {
-                    setMobileMenuOpen(true);
-                    let size = calcSize(
-                      <div className="flex flex-col w-fit h-fit px-4 overflow-visible">
-                        {menus && menus.length > 0 && menus.map((menu,i) =>
-                          <MenuButton
-                            key={i}
-                            name={menu.name?menu.name:'null'}
-                            link={menu.link?menu.link:'/'}
-                            menus={menu.menus && menu.menus.length > 0?menu.menus:null}
-                            setSelected={setSelected}
-                            onEnter={onEnter}
-                            onLeave={onLeave}
-                          />
-                        )}
-                      </div>
-                    );
-                    console.log(size.height);
-                    mobileMenuRef.current.style.height = size.height+'px';
-                  } else {
-                    setMobileMenuOpen(false);
-                    mobileMenuRef.current.style.height = '0';
-                  }
-                }
-              }}
-              onMouseLeave={e => {
-                e.preventDefault();
-                if(mobileMenuRef.current) {
-                  setMobileMenuOpen(false);
-                  mobileMenuRef.current.style.height = '0';
-                }
-              }}
-              className="flex w-8 h-8 items-center justify-center cursor-pointer text-[rgb(0,175,240)]">
-                <FaBars size={20}/>
-            </div>
-            <div className="flex flex-row w-fit h-fit space-x-2">
-              <Search color='rgb(100,100,100)'/>
-            </div>
-        </div> */}
-                {/* <div ref={mobileMenuRef}
-            style={{transition:'all .5s ease-in-out',backdropFilter:'blur(20px)'}}
-            className={`absolute flex flex-col top-full left-0 w-full h-0 bg-[rgba(255,255,255,.2)] shadow-2xl rounded-b-md overflow-hidden`}>
-            {menus && menus.length > 0 && menus.map((menu,i) =>
-              <MenuButton
-                key={i}
-                name={menu.name?menu.name:'null'}
-                link={menu.link?menu.link:'/'}
-                menus={menu.menus && menu.menus.length > 0?menu.menus:null}
-                setSelected={setSelected}
-                onEnter={onEnter}
-                onLeave={onLeave}
-                mobileMode={true}
-              />
-            )}
-        </div> */}
             </div>
             <div className="relative w-full h-fit" style={{ position: 'relative' }}>
                 <div
                     className="relative md:hidden flex flex-row w-full h-[56px] px-4 bg-white gap-2 rounded-full items-center justify-between z-10 overflow-hidden"
-                    style={{ marginTop: '20px' }}
+                    style={{ marginTop: '-20px' }}
                 >
                     <button className="flex w-8 h-8 text-theme items-center justify-center cursor-pointer shrink-0">
                         <FaBars size={20}/>
@@ -297,8 +238,6 @@ const Menu = () => {
                         <Search/>
                     </div>
                 </div>
-                {/* <div className='absolute md:hidden flex top-1/2 left-0 right-0 h-72 bg-white z-[5] shadow-lg'>
-        </div> */}
             </div>
         </div>
     );

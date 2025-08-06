@@ -29,24 +29,24 @@ const aboutItems = [
         imageUrl: 'https://images.unsplash.com/photo-1502767089025-6572583495b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         link: '#',
     },
-    {
-        title: 'Our Impact',
-        description: 'Discover stories from those whose lives we’ve touched.',
-        imageUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
-    },
-    {
-        title: 'News & Events',
-        description: 'Stay updated with our latest happenings.',
-        imageUrl: 'https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
-    },
-    {
-        title: 'Join Us',
-        description: 'Interested in volunteering or partnering? Reach out!',
-        imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
-    },
+    // {
+    //     title: 'Our Impact',
+    //     description: 'Discover stories from those whose lives we’ve touched.',
+    //     imageUrl: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    //     link: '#',
+    // },
+    // {
+    //     title: 'News & Events',
+    //     description: 'Stay updated with our latest happenings.',
+    //     imageUrl: 'https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    //     link: '#',
+    // },
+    // {
+    //     title: 'Join Us',
+    //     description: 'Interested in volunteering or partnering? Reach out!',
+    //     imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    //     link: '#',
+    // },
 ];
 
 const About = () => {
