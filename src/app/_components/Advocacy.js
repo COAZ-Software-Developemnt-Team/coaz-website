@@ -1,60 +1,123 @@
 import React from 'react';
+import {FaRegCircleDot} from "react-icons/fa6";
+import {FaVolumeUp} from "react-icons/fa";
 
 
-const Advocacy = () => {
+export default function Advocacy() {
+
     return (
-        <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f8f9fa', padding: '50px 20px' }}>
-            {/* Page Title */}
-            <h1 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '2.5rem' }}>Our Latest Public Health And Events</h1>
 
-            {/* Articles Grid */}
-            <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                    gap: '20px',
-                }}
-            >
-                {/* Example Article Card */}
-                {Array.from({ length: 1 }).map((_, index) => (
-                    <div
-                        key={index}
-                        style={{
-                            backgroundColor: '#fff',
-                            borderRadius: '8px',
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-                            overflow: 'hidden',
-                            display: 'flex',
-                            flexDirection: 'column',
-                        }}
-                    >
-                        <img
-                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Public HealthAndEvents"
-                            style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                        />
-                        <div style={{ padding: '20px' }}>
-                            <h3 style={{ marginBottom: '10px' }}> Annual General Meeting Registration </h3>
-                            <p style={{ fontSize: '0.95rem', color: '#555' }}>
-                                To register for AGM, click on the link below                            </p>
-                            <a
-                                href="https://coaz.org"
-                                style={{
-                                    display: 'inline-block',
-                                    marginTop: '10px',
-                                    color: '#007bff',
-                                    textDecoration: 'none',
-                                }}
-                            >
-                                Link
-                            </a>
-                        </div>
-                    </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {/* Container with max width for large screens, centered */}
 
-                ))}
-            </div>
+            {/* Eligibility Criteria */}
+            <section className="mb-12">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-700">Advocacy in Health Care</h2>
+
+
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">JUDICIAL ADVOCACY</span>
+                </p>
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">HUMAN RESOURCES FOR HEALTH ADVOCACY</span>
+                </p>
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">LOCAL GOVERNANCE ADVOCACY</span>
+                </p>
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">STATE ADVOCACY</span>
+                </p>
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">PUBLIC HEALTH ADVOCACY</span>
+                </p>
+                <p className="flex items-center">
+                    <FaVolumeUp size={16} className="text-gray-600"/>
+                    <span className="ml-2">ACCESS TO HEALTH CARE</span>
+                </p>
+
+                <h2 className="text-2xl font-semibold space-x-10 mb-4 text-gray-700">STATE ADVOCACY</h2>
+
+                <p className="ml-2 text-gray-600 text-sm md:text-base">
+                    At the state level, the COAZ shapes the policy of influential national policy making, partners with
+                    outside experts and stakeholder groups and influences the enactment and/or defeat of state
+                    legislation and regulation
+                </p>
+                <h2 className="text-1xl font-semibold space-x-10 mb-4 text-gray-700">Our State legislative and
+                    regulatory priorities</h2>
+
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative Amendment to the medicines and Allied substances act
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative amendment to the Health Professions council of Zambia to reflect communities of
+                        practice, that considers of clinical practitioners' community of practice
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative amendment to the food and nutrition act of 2020
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative enactment of the National Health services act
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative enactment of the Clinical Officers bill
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Legislative enactment of Affordable Care Act
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Opening regulatory documents for Clinical officer specialists with HPCZ
+                    </p>
+                </div>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-700">ACCESS TO HEALTH CARE</h2>
+                <p className="ml-2 text-gray-600 text-sm md:text-base">The COAZ works tirelessly to preserve health care
+                    access and coverage for Zambians across the nation, especially the country’s most vulnerable and
+                    underserved patient populations</p>
+                <h2 className="text-1xl font-semibold mb-4 text-gray-700">Our current focus on access to Health care include:</h2>
+
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        National health insurance (NHIMA) coverage for all Zambians
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Freedom of choice
+                    </p>
+                </div>
+                <div className="flex items-start mb-4">
+                    <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
+                    <p className="ml-2 text-gray-600 text-sm md:text-base">
+                        Freedom of practice for clinical officers to increase universal access for patients
+                    </p>
+                </div>
+            </section>
         </div>
-    );
-};
-
-export default Advocacy;
+    )
+}

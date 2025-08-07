@@ -270,7 +270,7 @@ export const services = {
         {
             image: '/images/img_49.jpg',
             name: 'CPD Platform',
-            link: '/ms',
+            link: 'https://coaz.org/ms/home',
             Component: CPD
         },
         {

@@ -39,7 +39,7 @@ const News = () => {
                             <p style={{ fontSize: '0.95rem', color: '#555' }}>
 To register for AGM, click on the link below                            </p>
                             <a
-                                href="https://portal.coaz.org/[userId]/my_events"
+                                href="http://192.168.1.53:3000/login"
                                 style={{
                                     display: 'inline-block',
                                     marginTop: '10px',
