@@ -326,16 +326,11 @@ const MenuButton = ({name, link, menus, parentRef, setSelected, onEnter, onLeave
             closeDropDown();
           }
         } else {
-          if(setSelected) {
-            setSelected(name);
-          }
-          
-          if(closeParentDropDown) {
-            closeParentDropDown();
-          }
+          setSelected && setSelected(name);
+          closeParentDropDown && closeParentDropDown();
         }
       }}
-      onMouseOver={() => {
+      onMouseOver={(e) => {
 
             }}
             onMouseEnter={(e) => {

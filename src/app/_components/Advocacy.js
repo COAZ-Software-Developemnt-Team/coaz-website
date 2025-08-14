@@ -43,12 +43,11 @@ export default function Advocacy() {
                 <h2 className="text-2xl font-semibold space-x-10 mb-4 text-gray-700">STATE ADVOCACY</h2>
 
                 <p className="ml-2 text-gray-600 text-sm md:text-base">
-                    At the state level, the COAZ shapes the policy of influential national policy making, partners with
+                    {`At the state level, the COAZ shapes the policy of influential national policy making, partners with
                     outside experts and stakeholder groups and influences the enactment and/or defeat of state
-                    legislation and regulation
+                    legislation and regulation`}
                 </p>
-                <h2 className="text-1xl font-semibold space-x-10 mb-4 text-gray-700">Our State legislative and
-                    regulatory priorities</h2>
+                <h2 className="text-1xl font-semibold space-x-10 mb-4 text-gray-700">Our State legislative and regulatory priorities</h2>
 
                 <div className="flex items-start mb-4">
                     <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
