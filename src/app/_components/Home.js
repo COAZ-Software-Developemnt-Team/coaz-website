@@ -55,7 +55,6 @@ const Home = () => {
 }
 
 export default Home
-
 const Features = () => {
 
   return (
@@ -435,13 +434,13 @@ const Form = () => {
       }
   };
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 w-full h-fit gap-4'>
+    <div id="user-form" className='grid grid-cols-1 md:grid-cols-2 w-full h-fit gap-4'>
       <Input type='text' name='firstName' value={user.firstName?user.firstName:''} placeholder='First Name' onChange={onChange}/>
       <Input type='text' name='lastName' value={user.lastName?user.lastName:''} placeholder='Last Name' onChange={onChange}/>
       <Input type='text' name='email' value={user.email?user.email:''} placeholder='Email' onChange={onChange}/>
       <Input type='text' name='idNumber' value={user.idNumber?user.idNumber:''} placeholder='Id Number' onChange={onChange}/>
-      <Input type='select' name='gendar' value={user.gendar?user.gendar:''} options onChange={onChange}>
-        <option value=''>Gendar</option>
+      <Input type='select' name='gender' value={user.gender?user.gender:''} options onChange={onChange}>
+        <option value=''>gender</option>
         {sex.map((option,i) => <option key={i}>{option}</option>)}
       </Input>
       <Input type='select' name='userType' value={user.userType?user.userType.id:''} onChange={onUserType}>
