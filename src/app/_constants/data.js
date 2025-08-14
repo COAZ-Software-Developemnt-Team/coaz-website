@@ -942,35 +942,35 @@ export const membership = {
                         Eligibility Criteria
                     </p>
                     <p className='w-full h-auto text-lg text-[rgb(100,100,100)] font-jost-book'>
-                        Associate Membership is designated for individuals engaged in professions allied to clinical medicine, including 
+                        {`Associate Membership is designated for individuals engaged in professions allied to clinical medicine, including 
                         but not limited to medical researchers, healthcare administrators, or educators. The eligibility criteria for 
-                        Associate Membership shall be defined in the Association's guidelines
+                        Associate Membership shall be defined in the Association's guidelines`}
                     </p>
                 </div>,
             RightsAndPrivileges:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Rights and Privileges
+                        {`Rights and Privileges`}
                     </p>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Attendance at General Meetings: Associate Members have the right to attend general meetings 
-                            convened by the Association
+                            {`Attendance at General Meetings: Associate Members have the right to attend general meetings 
+                            convened by the Association`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Non-voting Participation: While Associate Members may participate in discussions and activities, 
-                            they shall not have voting rights in Association matters
+                            {`Non-voting Participation: While Associate Members may participate in discussions and activities, 
+                            they shall not have voting rights in Association matters`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Access to Designated Resources: Associate Members shall have access to specific resources and 
-                            materials as determined by the National Executive Committee
+                            {`Access to Designated Resources: Associate Members shall have access to specific resources and 
+                            materials as determined by the National Executive Committee`}
                         </p>
                     </div>
                 </div>
@@ -984,35 +984,35 @@ export const membership = {
                         Eligibility Criteria
                     </p>
                     <p className='w-full h-auto text-lg text-[rgb(100,100,100)] font-jost-book'>
-                        Student Membership is open to individuals actively enrolled in recognized clinical officer/clinical 
+                        {`Student Membership is open to individuals actively enrolled in recognized clinical officer/clinical 
                         Sciences/clinical medicine training programs. The eligibility requirements and conditions for 
-                        Student Membership shall be explicitly set forth in the Association's regulations
+                        Student Membership shall be explicitly set forth in the Association's regulations`}
                     </p>
                 </div>,
             RightsAndPrivileges:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Rights and Privileges
+                        {`Rights and Privileges`}
                     </p>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Educational Event Participation: Student Members shall be entitled to attend educational events 
-                            organized by COAZ to support their academic and professional development
+                            {`Educational Event Participation: Student Members shall be entitled to attend educational events 
+                            organized by COAZ to support their academic and professional development`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Mentorship Opportunities: Student Members may receive mentorship from Full Members of the 
-                            Association, fostering their growth within the clinical officer profession
+                            {`Mentorship Opportunities: Student Members may receive mentorship from Full Members of the 
+                            Association, fostering their growth within the clinical officer profession`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Access to Resources: Student Members shall have access to resources aimed at supporting their 
-                            academic endeavors and professional aspirations
+                            {`Access to Resources: Student Members shall have access to resources aimed at supporting their 
+                            academic endeavors and professional aspirations`}
                         </p>
                     </div>
                 </div>
@@ -1023,36 +1023,36 @@ export const membership = {
             EligibilityCriteria:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Eligibility Criteria
+                        {`Eligibility Criteria`}
                     </p>
                     <p className='w-full h-auto text-lg text-[rgb(100,100,100)] font-jost-book'>
-                        Life Membership may be conferred upon Full Members in recognition of exceptional contributions to 
+                        {`Life Membership may be conferred upon Full Members in recognition of exceptional contributions to 
                         COAZ or the broader field of clinical medicine. The specific criteria for conferring Life 
-                        Membership shall be outlined in the Association's member regulations
+                        Membership shall be outlined in the Association's member regulations`}
                     </p>
                 </div>,
             RightsAndPrivileges:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Rights and Privileges
+                        {`Rights and Privileges`}
                     </p>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Lifetime Access: Life Members shall have lifetime access to Association activities, resources, 
-                            and benefits, same as full members
+                            {`Lifetime Access: Life Members shall have lifetime access to Association activities, resources, 
+                            and benefits, same as full members`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Exemption fromSubscription Fees: Life Members shall be exempt from any annual subscription fees
+                            {`Exemption fromSubscription Fees: Life Members shall be exempt from any annual subscription fees`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            All current and former National executive members shall have life membership status
+                            {`All current and former National executive members shall have life membership status`}
                         </p>
                     </div>
                 </div>
@@ -1063,38 +1063,38 @@ export const membership = {
             EligibilityCriteria:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Eligibility Criteria
+                        {`Eligibility Criteria`}
                     </p>
                     <p className='w-full h-auto text-lg text-[rgb(100,100,100)] font-jost-book'>
-                        Honorary Membership may be granted to individuals who have made significant contributions to the 
+                        {`Honorary Membership may be granted to individuals who have made significant contributions to the 
                         advancement of clinical medicine. The criteria and procedures for conferring Honorary Membership 
-                        shall be established by the National Executive Committee
+                        shall be established by the National Executive Committee`}
                     </p>
                 </div>,
             RightsAndPrivileges:() => 
                 <div className='flex flex-col space-y-8 w-full h-auto'>
                     <p className='flex w-full h-auto font-semibold font-le-beaune-new text-[22px] lg:text-4xl text-[rgb(59,59,59)]'>
-                        Rights and Privileges
+                        {`Rights and Privileges`}
                     </p>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Special Recognition: Honorary Members shall be accorded special recognition by the association 
-                            for their distinguished contributions health or education or similar
+                            {`Special Recognition: Honorary Members shall be accorded special recognition by the association 
+                            for their distinguished contributions health or education or similar`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Attendance at Designated Events: Honorary Members may be invited to attend specific Association 
-                            events as determined by the Executive Committee
+                            {`Attendance at Designated Events: Honorary Members may be invited to attend specific Association 
+                            events as determined by the Executive Committee`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Exemption from Membership Fees: Honorary Members shall be exempt from any membership fees as 
-                            prescribed by the Association
+                            {`Exemption from Membership Fees: Honorary Members shall be exempt from any membership fees as 
+                            prescribed by the Association`}
                         </p>
                     </div>
                 </div>
@@ -1107,28 +1107,28 @@ export const membership = {
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Non-payment of Dues: Membership may be terminated due to non-payment of membership dues or any 
-                            prescribed fees within the stipulated timeframes
+                            {`Non-payment of Dues: Membership may be terminated due to non-payment of membership dues or any 
+                            prescribed fees within the stipulated timeframes`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Violation of Code of Ethics: Termination may result from a member's violation of the COAZ Code 
-                            of Ethics or Health professions code of ethics
+                            {`Violation of Code of Ethics: Termination may result from a member's violation of the COAZ Code 
+                            of Ethics or Health professions code of ethics`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Conduct Prejudicial to the Association: Membership may be terminated if a member engages in 
-                            conduct deemed prejudicial to the interests and objectives of the Association
+                            {`Conduct Prejudicial to the Association: Membership may be terminated if a member engages in 
+                            conduct deemed prejudicial to the interests and objectives of the Association`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'d)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Resignation: membership shall be terminated upon resignation
+                            {`Resignation: membership shall be terminated upon resignation`}
                         </p>
                     </div>
                 </div>
@@ -1141,22 +1141,22 @@ export const membership = {
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'a)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Notice: Prior to termination, a member shall be provided with written notice specifying the 
-                            grounds for termination and affording an opportunity to respond
+                            {`Notice: Prior to termination, a member shall be provided with written notice specifying the 
+                            grounds for termination and affording an opportunity to respond`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'b)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Appeal Mechanism: The member subject to termination shall have the right to appeal against the 
-                            decision through established appeal mechanisms outlined in the Association's regulations
+                            {`Appeal Mechanism: The member subject to termination shall have the right to appeal against the 
+                            decision through established appeal mechanisms outlined in the Association's regulations`}
                         </p>
                     </div>
                     <div className='flex flex-row space-x-4'>
                         <p className='font-jost-book text-[rgb(85,85,85)] text-lg'>{'c)'}</p>
                         <p className='text-lg tracking-wider font-jost-book text-[rgb(85,85,85)]'>
-                            Resignation: Any member may voluntarily resign from COAZ by submitting written notice to the 
-                            Secretary General. The resignation shall become effective after 90 days
+                            {`Resignation: Any member may voluntarily resign from COAZ by submitting written notice to the 
+                            Secretary General. The resignation shall become effective after 90 days`}
                         </p>
                     </div>
                 </div>

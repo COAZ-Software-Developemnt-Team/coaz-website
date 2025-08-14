@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { PiCaretDown, PiCaretRight } from "react-icons/pi";
 import { Logo } from "./CoazIcons";
 import { FaPaperPlane, FaPhoneAlt } from "react-icons/fa";
@@ -47,11 +47,8 @@ const calcSize = (Component) => {
 const Menu = () => {
   const [selected, setSelected] = useState(null);
   const [navbarMenus,setNavbarMenus] = useState(null); 
-  const [mobileMenuOpen,setMobileMenuOpen] = useState(false);
   const menuButtonsRef = useRef(null);
   const highlightRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const dropMenuRef = useRef(null);
   const more = 'More';
 
   const onEnter = (e) => {
@@ -70,9 +67,9 @@ const Menu = () => {
     if (selected) {
       const active = document.getElementById(selected);
       if (active) {
-        let padding = 16;
-        let x = active.offsetLeft;
-        let width = active.offsetWidth;
+        //let padding = 16;
+        //let x = active.offsetLeft;
+        //let width = active.offsetWidth;
         //highlightRef.current.style.left = x + padding + "px";
         //highlightRef.current.style.width = width - padding * 2 + "px";
       }
@@ -359,11 +356,16 @@ const MenuButton = ({name, link, menus, parentRef, setSelected, onEnter, onLeave
             closeDropDown();
           }
         } else {
-          setSelected && setSelected(name);
-          closeParentDropDown && closeParentDropDown();
+          if(setSelected) {
+            setSelected(name);
+          }
+          
+          if(closeParentDropDown) {
+            closeParentDropDown();
+          }
         }
       }}
-      onMouseOver={(e) => {
+      onMouseOver={() => {
 
       }}
       onMouseEnter={(e) => {

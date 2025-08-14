@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
-const MenuItem = ({id,link,name,Icon,categories,setShowCategories,setCloseCategories,menus,dropDownId,dropDownComponent}) => {
+const MenuItem = ({id,name,Icon,categories,setShowCategories,setCloseCategories,menus,dropDownId,dropDownComponent}) => {
   const [dropDown, setDropDown] = useState(null);
   const [show,setShow] = useState(false);
 
-  const handleMouseEnter = (e) => {
+  const handleMouseEnter = () => {
     if(dropDownComponent) {
       if(!show) {
         setShow(true);
@@ -38,7 +38,7 @@ const MenuItem = ({id,link,name,Icon,categories,setShowCategories,setCloseCatego
   }
  
   return (
-    <div onClick={(e)=>setShow(false)} className='relative flex h-full'>
+    <div onClick={()=>setShow(false)} className='relative flex h-full'>
       {menus?
         <button id={id} 
             onClick={(e) => {
