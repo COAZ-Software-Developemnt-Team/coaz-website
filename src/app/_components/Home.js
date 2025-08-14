@@ -13,10 +13,8 @@ const Home = () => {
   useEffect(() => {
     window.addEventListener('scroll', function(event) {
       // Your code to handle the scroll event goes here
-      for(const callback of scrollCallbacks) {
-          if(callback) {
-            callback(event);
-          }
+      for(let callback of scrollCallbacks) {
+        callback && callback(event);
       }
     });
   },[])
@@ -109,8 +107,8 @@ const Feature = ({Icon,title,description,active}) => {
   return (
     <div className='w-full h-64'>
       <div 
-        onMouseEnter={() => setHighlighted(true)}
-        onMouseLeave={() => setHighlighted(false)}
+        onMouseEnter={(e) => setHighlighted(true)}
+        onMouseLeave={(e) => setHighlighted(false)}
         className={`feature ${active?'active':''} flex flex-col space-y-2 items-center p-[10%] hover:text-white overflow-hidden`}>
         {Icon && <div className='flex shrink-0'><Icon size={48} fill={active || highlighted?'white':'rgb(27,156,227)'}/></div>}
         {title && 
@@ -270,8 +268,8 @@ const Service = ({Icon,title,description}) => {
   const [highlighted,setHighlighted] = useState(false);
   return (
     <div style={{transition:'all .2s linear'}} 
-      onMouseEnter={() => setHighlighted(true)}
-      onMouseLeave={() => setHighlighted(false)}
+      onMouseEnter={(e) => setHighlighted(true)}
+      onMouseLeave={(e) => setHighlighted(false)}
      className='relative grid-item flex flex-col w-full h-64 lg:h-74 space-y-2 items-center p-8 hover:bg-theme cursor-pointer'>
       {Icon && <div className='flex mb-4 shrink-0'><Icon size={48} fill={highlighted?'white':'rgb(27,156,227)'}/></div>}
         {title && 
@@ -316,7 +314,7 @@ const ContactUs = () => {
           You Always Get the Best Guidance
         </p>
         <button style={{transition:'all .5s ease-in-out'}} 
-          onClick={() => {}} 
+          onClick={(e) => {}} 
           className='w-full md:w-fit h-fit px-16 py-4 font-normal text-theme bg-white rounded-full cursor-pointer shrink-0 text-nowrap'>
           Contact Us
         </button>
@@ -354,8 +352,8 @@ const Benefit = ({img,bgColor,text}) => {
     <div className={`w-full h-76 ${bgColor}`}>
       <div style={{backgroundImage:`url(${img})`}} className={`relative w-full h-full bg-center bg-contain bg-no-repeat`}>
         <div style={{transition:'all .3s ease-in-out'}} className={`absolute left-0 top-0 w-full h-full bg-theme ${highlighted?'opacity-90':'md:opacity-0 opacity-40'}`}/> 
-        <div onMouseEnter={() => setHighlighted(true)}
-          onMouseLeave={() => setHighlighted(false)}
+        <div onMouseEnter={(e) => setHighlighted(true)}
+          onMouseLeave={(e) => setHighlighted(false)}
           className='absolute flex left-0 top-0 w-full h-full items-center justify-center'>
           <div style={{transition:'all .3s ease-in-out'}} className={`flex flex-col p-6 space-y-4 items-center justify-center ${highlighted?'opacity-100':'md:opacity-0 opacity-100'}`}>
             <p className='w-full h-fit text-[28px]/[40px] text-white font-semibold text-center cursor-pointer'>
@@ -448,7 +446,7 @@ const Form = () => {
         {userTypes.map((option,i) => <option key={i} value={option.id}>{option.name}</option>)}
       </Input>
       <Input type='password' name='password' value={user.password?user.password:''} placeholder='Password' onChange={onChange}/>
-      <button onClick={() => {}} 
+      <button onClick={(e) => {}} 
         className='w-full h-[58px] font-normal text-theme bg-white rounded-full cursor-pointer shrink-0 text-nowrap'>
         Submit Form
       </button>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Logo({fill}) {
+export function Logo({size,fill}) {
   return (
     <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" style={{width:'100%',height:'100%'}} viewBox="0 0 639.99 639.98">    
       <g id="Layer_1" data-name="Layer 1">

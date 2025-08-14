@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { FaMagnifyingGlass } from 'react-icons/fa6';
 
-const Search = () => {
+const Search = ({color,border}) => {
+    const [focused,setFocused] = useState(false);
     return (
         <div className="flex flex-row w-full h-8 pl-1 space-x-4 items-center rounded-full bg-white">
             <button className='flex w-6 h-6 rounded-full items-center justify-center text-theme shrink-0'>

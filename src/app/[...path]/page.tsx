@@ -1,18 +1,14 @@
-import React, {use} from 'react'
+import React from 'react'
 import { notFound } from 'next/navigation';
 import {menus,findMenu} from '../_constants/data'
+import { notDeepEqual } from 'assert';
 
-interface PageProps {
-  params: Promise<{ path: string[] }>; // Define params as a Promise
-}
-
-const MenuContent = ({params} : PageProps) => {
-    const resolvedParams = use(params);
-    const {path} = resolvedParams;
+const MenuContent = async ({params} : {params: {path:string[]}}) => {
+    const {path} = await params;
     let menu = null;
     if(path && path.length > 0) {
       let fullPath = '';
-      for (const pathItem of path) {
+      for (let pathItem of path) {
         fullPath += `/${pathItem}`;
       }
       menu = findMenu(menus,fullPath);

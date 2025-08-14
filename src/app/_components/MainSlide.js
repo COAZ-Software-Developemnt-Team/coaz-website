@@ -32,7 +32,7 @@ const MainSlide = () => {
     useEffect(() => {
         let i = 0;
         let index = 0;
-        const interval = setInterval(() => {
+        const interval = setInterval((e) => {
             if(i == 0) {
                 setCurrent({index:index,slide:slides[index]});
             }
