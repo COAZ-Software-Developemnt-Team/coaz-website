@@ -9,9 +9,6 @@ export default function LifeM (){
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Eligibility Criteria</h2>
                 <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    Life Membership may be conferred upon Full Members in recognition of exceptional contributions to
-                    COAZ or the broader field of clinical medicine. The specific criteria for conferring Life
-                    Membership shall be outlined in the Association's member regulations
                 </p>
             </section>
 

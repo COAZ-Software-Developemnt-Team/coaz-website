@@ -17,7 +17,7 @@ export default function Practice() {
                     and education, the COAZ vigorously defends the Clinical practice against scope of practice
                     expansions that threaten patient safety
                 </p>
-                <h2 className="text-2xl font-semibold mb-4 text-gray-700">Clinicians' vs Non-Clinicians</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-700"></h2>
                 <div className="flex items-start mb-4">
                     <FaRegCircleDot size={16} className="text-gray-600 mt-1 flex-shrink-0"/>
                     <p className="ml-2 text-gray-600 text-sm md:text-base">

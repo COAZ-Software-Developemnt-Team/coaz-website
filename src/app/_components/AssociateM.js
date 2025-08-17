@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import {FaRegCircleDot} from "react-icons/fa6";
 
 
 export default function AssociateM()
@@ -12,11 +11,7 @@ export default function AssociateM()
             {/* Eligibility Criteria */}
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Eligibility Criteria</h2>
-                <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    Associate Membership is designated for individuals engaged in professions allied to clinical medicine, including
-                    but not limited to medical researchers, healthcare administrators, or educators. The eligibility criteria for
-                    Associate Membership shall be defined in the Association's guidelines
-                </p>
+                
             </section>
 
             {/* Rights and Privileges */}

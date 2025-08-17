@@ -9,12 +9,7 @@ export default function Delivering() {
             {/* Eligibility Criteria */}
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Delivering Care</h2>
-                <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    COAZ is dedicated to promoting excellence in professional practice within the healthcare sector. We
-                    provide resources, guidelines, and support to empower our member healthcare professionals to deliver
-                    high-quality care to their patients. Our focus is enhancing a culture of continuous improvement and
-                    innovation in healthcare delivery
-                </p>
+                
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Guidelines and Resources</h2>
 
                 <div className="flex items-start mb-4">
@@ -47,10 +42,6 @@ export default function Delivering() {
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Health Equity in Zambia</h2>
                 <p className="list-decimal list-inside space-y-3 text-gray-600 text-sm md:text-base">
-
-                        The COAZ is committed to creating a culturally aware and diverse Clinical Officers’ workforce.
-                        Learn more about the COAZ's efforts to drive diversity & inclusion with the latest articles and
-                        studies
                 </p>
 
                 <h2 className="text-1xl font-semibold mb-4 space-x-4 text-gray-700">Explore Topics</h2>

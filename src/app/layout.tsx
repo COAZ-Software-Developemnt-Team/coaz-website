@@ -123,7 +123,7 @@ export default function RootLayout({
 
             <div className="flex flex-col items-center md:items-start">
               <div className="w-50 h-50 bg-white rounded-full mb-4 flex items-center justify-center font-bold text-black">
-                <Logo size={200} fill="rgb(0,175,240)"/>
+                <Logo fill="rgb(0,175,240)"/>
               </div>
               <p className="text-center md:text-left">
               </p>

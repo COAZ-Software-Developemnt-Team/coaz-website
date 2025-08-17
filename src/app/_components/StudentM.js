@@ -10,9 +10,7 @@ export default function StudentM  () {
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">Eligibility Criteria</h2>
                 <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    Student Membership is open to individuals actively enrolled in recognized clinical officer/clinical
-                    Sciences/clinical medicine training programs. The eligibility requirements and conditions for
-                    Student Membership shall be explicitly set forth in the Association's regulations
+                    
                 </p>
             </section>
 

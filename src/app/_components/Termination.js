@@ -25,9 +25,7 @@ export default  function Termination () {
                         grounds for termination and affording an opportunity to respond
                     </li>
                     <li>
-                        Appeal Mechanism: The member subject to termination shall have the right to appeal against
-                        the
-                        decision through established appeal mechanisms outlined in the Association's regulations
+                        
                     </li>
                     <li>
                         Resignation: Any member may voluntarily resign from COAZ by submitting written notice to the

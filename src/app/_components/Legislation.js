@@ -11,7 +11,7 @@ export default function Legislation (){
                 <h2 className= "text-2xl font-semibold mb-4 text-gray-700">Legislation and Judicial</h2>
                 <h3 className="text-1xl font-semibold mb-4 text-gray-700">About</h3>
                 <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    The principal advocate and strategist for the profession's policy agenda, legislative priorities, and legal interests. The Committee’s mandate is to anticipate, analyze, and influence policy and legislative developments, champion initiatives that advance the interests and welfare of the profession and to provide expert guidance and representation in legal matters affecting members
+                    
                 </p>
                 <h4 className="text-1xl font-semibold mb-4 text-gray-700">Composition</h4>
 

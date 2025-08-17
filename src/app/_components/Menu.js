@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { PiCaretDown, PiCaretRight } from "react-icons/pi";
 import { Logo } from "./CoazIcons";
 import { FaPaperPlane, FaPhoneAlt } from "react-icons/fa";
@@ -7,7 +7,6 @@ import { FaBars } from "react-icons/fa6";
 import {menus} from "../_constants/data";
 import Search from "../_components/Search";
 import {renderToString} from "react-dom/server";
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 
@@ -51,11 +50,8 @@ const calcSize = (Component) => {
 const Menu = () => {
   const [selected, setSelected] = useState(null);
   const [navbarMenus,setNavbarMenus] = useState(null); 
-  const [mobileMenuOpen,setMobileMenuOpen] = useState(false);
   const menuButtonsRef = useRef(null);
   const highlightRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const dropMenuRef = useRef(null);
   const more = 'More';
 
     const onEnter = (e) => {
@@ -74,9 +70,9 @@ const Menu = () => {
     if (selected) {
       const active = document.getElementById(selected);
       if (active) {
-        let padding = 16;
-        let x = active.offsetLeft;
-        let width = active.offsetWidth;
+        //let padding = 16;
+        //let x = active.offsetLeft;
+        //let width = active.offsetWidth;
         //highlightRef.current.style.left = x + padding + "px";
         //highlightRef.current.style.width = width - padding * 2 + "px";
       }
@@ -184,7 +180,7 @@ const Menu = () => {
                     <div className="flex flex-row items-center space-x-2">
                         <button className="p-1">
                             <a href="#user-form"
-                               className="p-1 w-full h-[58px] font-normal text-theme bg-white rounded-full cursor-pointer shrink-0 text-nowrap">
+                               className="p-1 w-full h-[58px] font-normal text-white rounded-full cursor-pointer shrink-0 text-nowrap">
                                 Register
                             </a>
                         </button>
@@ -194,7 +190,7 @@ const Menu = () => {
                             href="https://portal.coaz.org/login"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-1 inline-block bg-blue-500 text-white rounded px-4 py-2 cursor-pointer"
+                            className="p-1 inline-block text-white rounded px-4 py-2 cursor-pointer"
                         >
                             Log In
                         </a>
@@ -329,11 +325,15 @@ const MenuButton = ({name, link, menus, parentRef, setSelected, onEnter, onLeave
             closeDropDown();
           }
         } else {
-          setSelected && setSelected(name);
-          closeParentDropDown && closeParentDropDown();
+            if(setSelected) {
+                setSelected(name);
+            }
+            if(closeParentDropDown) {
+                closeParentDropDown();
+            }
         }
       }}
-      onMouseOver={(e) => {
+            onMouseOver={() => {
 
             }}
             onMouseEnter={(e) => {

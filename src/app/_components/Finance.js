@@ -11,9 +11,7 @@ export default function Finance (){
             <section className="mb-12">
                 <h2 className= "text-2xl font-semibold mb-4 text-gray-700">Finance And Administration</h2>
                 <h3 className="text-1xl font-semibold mb-4 text-gray-700">About</h3>
-                <p className="mb-4 text-gray-600 text-base md:text-lg">
-                    The steward for the profession's financial sustainability, operational effectiveness, and governance excellence. With a strategic focus on fiscal management, transparency, and accountability
-                    The committee is mandated in the development of financial management practices, the optimization of administrative processes, and the cultivation of a governance framework that improves organizational resilience                 </p>
+                
                 <h4 className="text-1xl font-semibold mb-4 text-gray-700">Composition</h4>
 
                 <div className="flex items-start mb-4">

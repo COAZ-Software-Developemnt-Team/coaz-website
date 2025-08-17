@@ -19,23 +19,7 @@ export default function Grounds () {
             <section className="mb-12">
                 {/*<h2 className="text-2xl font-semibold mb-4 text-gray-700">Rights and Privileges</h2>*/}
                 <ol className="list-decimal list-inside space-y-3 text-gray-600 text-sm md:text-base">
-                    <li>
-                        Non-payment of Dues: Membership may be terminated due to non-payment of membership dues or
-                        any
-                        prescribed fees within the stipulated time frames
-                    </li>
-                    <li>
-                        Violation of Code of Ethics: Termination may result from a member's violation of the COAZ
-                        Code
-                        of Ethics or Health professions code of ethics
-                    </li>
-                    <li>
-                        Conduct Prejudicial to the Association: Membership may be terminated if a member engages in
-                        conduct deemed prejudicial to the interests and objectives of the Association
-                    </li>
-                    <li>
-                        Resignation: membership shall be terminated upon resignation
-                    </li>
+                    
                 </ol>
             </section>
         </div>
